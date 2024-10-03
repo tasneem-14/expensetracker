@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: flex-start;
+    /* Align items at the top */
+    min-height: 100vh;
+    /* Use min-height for better responsiveness */
+    padding: 20px;
+    /* Add some padding */
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.U6yHC8v3bUIGc0uoyVm-1gHaD4&pid=Api&P=0&h=180");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+}
+
+.container {
+    width: 100%;
+    /* Use 100% width to fill available space */
+    max-width: 750px;
+    /* Set a max-width for larger screens */
+    padding: 20px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* Add some border radius for a softer look */
+    margin-top: 20px;
+    /* Add margin-top to provide spacing from the top */
+    margin-bottom: 20px;
+    /* Add margin-bottom to provide spacing below */
+    background-color: #c2d1f0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.balance {
+    margin-bottom: 20px;
+}
+
+.balance h2 {
+    text-align: center;
+}
+
+.balance h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.inc-exp-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border-top: 2px solid #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+    flex-wrap: wrap;
+    font-size: 30px;
+    /* Allow items to wrap on smaller screens */
+}
+
+.money {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.plus {
+
+    color: #2ecc71;
+}
+
+.minus {
+    color: #c0392b;
+}
+
+.form-control {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #990099;
+    font-size: 25px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 20px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 25px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+ul.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+ul.list li {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul.list li.plus {
+    border-right: 5px solid #2ecc71;
+    padding: 20px;
+}
+
+ul.list li.minus {
+    border-right: 5px solid #c0392b;
+    padding: 20px;
+}
+
+.h1 {
+    color: purple;
+}
+
+.h3 {
+    font-size: 25px;
+    color: #990099;
+}
+
+.h3l {
+    font-size: 25px;
+}
+.btn1{
+    width: 100%;
+
+    padding: 10px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* Media Queries for Responsive Adjustments */

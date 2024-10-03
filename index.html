@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="signupForm">
+            <h2>Sign Up</h2>
+            <div class="form-control">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required placeholder="Enter username..." minlength="3" maxlength="15">
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required placeholder="Enter password..." minlength="6" maxlength="15">
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+        <form id="loginForm" style="display: none;">
+            <h2>Login</h2>
+            <div class="form-control">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" required placeholder="Enter username...">
+            </div>
+            <div class="form-control">
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required placeholder="Enter password...">
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <p id="toggleForm" style="cursor: pointer; color: blue;">Already have an account? Login here</p>
+    </div>
+
+    <script src="index.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
