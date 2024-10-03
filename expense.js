@@ -9,17 +9,16 @@ const logoutBtn = document.getElementById('logoutBtn');
 
 let transactions = [];
 
-// Function to log out
+
 function logout() {
-    // Clear user data (if applicable)
-    // Redirect to login page
-    window.location.href = 'index.html'; // Change to your login page file name
+   
+    window.location.href = 'index.html'; 
 }
 
-// Add event listener for logout button
+
 logoutBtn.addEventListener('click', logout);
 
-// Add new transaction
+
 function addTransaction(e) {
     e.preventDefault();
 
@@ -41,12 +40,12 @@ function addTransaction(e) {
     amount.value = '';
 }
 
-// Generate random ID for transaction
+
 function generateID() {
     return Math.floor(Math.random() * 1000000);
 }
 
-// Add transaction to DOM list
+
 function addTransactionDOM(transaction) {
     const sign = transaction.amount < 0 ? '-' : '+';
     const item = document.createElement('li');
@@ -60,7 +59,7 @@ function addTransactionDOM(transaction) {
     list.appendChild(item);
 }
 
-// Update income, expense, and balance
+
 function updateValues() {
     const amounts = transactions.map(transaction => transaction.amount);
     const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
@@ -79,13 +78,13 @@ function updateValues() {
     expenseDisplay.innerText = `$${expense}`;
 }
 
-// Remove transaction by ID
+
 function removeTransaction(id) {
     transactions = transactions.filter(transaction => transaction.id !== id);
     init();
 }
 
-// Initialize the app
+
 function init() {
     list.innerHTML = '';
     transactions.forEach(addTransactionDOM);
